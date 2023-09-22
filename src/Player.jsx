@@ -21,7 +21,7 @@ const Player = () => {
 
     useEffect(()=>{
         console.log("Spring으로 요청")
-        let url = "http://54.180.82.221/:8091/SpringBoot2/PlayerList.do";
+        let url = "http://54.180.82.221:8091/SpringBoot2/PlayerList.do";
         axios
         .post(url, {responseType : 'blob'})
         .then((res)=>{
